@@ -26,11 +26,6 @@ float volume(struct box *b){
     return vol; 
 }
 
-
-void mutateBox(struct box *b){
-    b->color = "Bronze";
-}
-
 /**
  * Capitalize an array of characters (String in other languages).
 */
@@ -232,5 +227,5 @@ int main(void){
             default:
                 printf("Invalid option. Try again.");
             }//end main menu switch
-        }//end main while
-    }//end main 
+    }//end main while
+}//end main 
