@@ -7,9 +7,6 @@ struct box{
     float length;
     float width;
     float height;
-    float x;
-    float y;
-    float z;
     char* color;
 };
 
