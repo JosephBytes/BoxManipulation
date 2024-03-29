@@ -3,9 +3,6 @@
 #include <string.h>//for strcmp
 #include <stdlib.h>// for malloc 
 
-/**
- * Struct Box.
-*/
 struct box{
     float length;
     float width;
@@ -16,28 +13,18 @@ struct box{
     char* color;
 };
 
-//
-/**
- * Box pointer passed in. Volume is calculated as length.
- * @param struct box *, pointer to a struct box is accepted.
-*/
 float volume(struct box *b){    
     float vol = (*b).length * (b -> width) * (*b).height; //(input -> width) is another way of calling the width from the box pointer
     return vol; 
 }
 
-/**
- * Capitalize an array of characters (String in other languages).
-*/
+// Capitalize an array of characters (String in other languages).
 void capitalize(char a[]){ 
     for(int i = 0; a[i] != '\0'; i++){  //at the end of string is where \0 is at 
         a[i] = toupper(a[i]);           //Overwriting the character to uppercase 
     }
 }
 
-/**
- * Main Method.
-*/
 int main(void){
     printf("\n");
     //allocate storage for 100 boxes in the array
